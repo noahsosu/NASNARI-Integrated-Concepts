@@ -1,0 +1,318 @@
+/* ════════════════════════════════════════════════════════════════ */
+/* NASNARI INTEGRATED CONCEPTS LIMITED - ABOUT PAGE STYLES */
+/* ════════════════════════════════════════════════════════════════ */
+
+.page-header {
+  background: linear-gradient(135deg, var(--secondary) 0%, #0A1F3A 100%);
+  color: white;
+  padding: 140px 40px 80px;
+  text-align: center;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(30, 114, 190, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 7vw, 64px);
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+  animation: fadeUp 0.8s ease-out 0.1s both;
+  position: relative;
+  z-index: 2;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeUp 0.8s ease-out 0.2s both;
+  position: relative;
+  z-index: 2;
+}
+
+/* ════════════════════════════════════════════════════════════════ */
+/* ABOUT SECTION */
+/* ════════════════════════════════════════════════════════════════ */
+
+.about {
+  padding: 100px 40px;
+  background: white;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.mv-card {
+  background: var(--light-bg);
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(30, 114, 190, 0.12);
+}
+
+.mv-card h3 {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mv-card p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.values-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.values-list li {
+  font-size: 15px;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.values-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.about-image {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 12px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 120px;
+  opacity: 0.9;
+  animation: slideInRight 0.8s ease-out 0.2s both;
+}
+
+/* ════════════════════════════════════════════════════════════════ */
+/* TEAM SECTION */
+/* ════════════════════════════════════════════════════════════════ */
+
+.team {
+  padding: 100px 40px;
+  background: var(--light-bg);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.team-member {
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.member-avatar {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover .member-avatar {
+  transform: scale(1.08) rotateY(5deg);
+  box-shadow: 0 20px 40px rgba(30, 114, 190, 0.25);
+}
+
+.team-member h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.member-title {
+  font-size: 14px;
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.member-bio {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* ════════════════════════════════════════════════════════════════ */
+/* CERTIFICATIONS SECTION */
+/* ════════════════════════════════════════════════════════════════ */
+
+.certifications {
+  padding: 100px 40px;
+  background: white;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.cert-card {
+  background: var(--light-bg);
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(30, 114, 190, 0.06), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cert-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(30, 114, 190, 0.12);
+}
+
+.cert-card:hover::before {
+  opacity: 1;
+}
+
+.cert-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  display: block;
+  animation: bounce 2s infinite;
+}
+
+.cert-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+  position: relative;
+  z-index: 1;
+}
+
+.cert-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ════════════════════════════════════════════════════════════════ */
+/* RESPONSIVE */
+/* ════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 120px 24px 60px;
+  }
+
+  .about, .team, .certifications {
+    padding: 60px 24px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-image {
+    height: 300px;
+    font-size: 80px;
+  }
+
+  .team-grid, .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header h1 {
+    font-size: 36px;
+  }
+}
